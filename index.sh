@@ -24,6 +24,13 @@ export UserHomeDot=(
 	.zprofile
 )
 
+case $(whoami) in
+	"root")
+		echo -e "\e[31m==>\e[0m 你不能使用 Root 账户运行这个脚本。"
+		exit 1
+		;;
+esac
+
 case $1 in
     "update")
         . "$deps/update.sh"
