@@ -31,6 +31,9 @@ case $(whoami) in
 		;;
 esac
 
+
+cd $WorkDir/..
+
 case $1 in
     "update")
         . "$deps/update.sh"
