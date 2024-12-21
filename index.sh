@@ -1,17 +1,40 @@
 #!/bin/bash
 
 export deps="/arch/deps"
-source "$deps/env.sh"
+export ScriptDir="/arch/scripts"
+export WorkDir="/arch/storage"
+
+export UserHomeConfig=(
+	# Desktop
+	hypr
+	waybar
+	mako
+	wlogout
+	wezterm
+
+	# Terminal
+	cava
+	nvim
+	lvim
+	neofetch
+)
+
+export UserHomeDot=(
+	.zshrc
+	.zprofile
+)
 
 case $1 in
     "update")
-        bash "$deps/update.sh"
+        . "$deps/update.sh"
+        cd $WorkDir/..
         ;;
     "push")
         bash "$deps/push.sh"
         ;;
     *)
-        bash "$deps/update.sh"
+        . "$deps/update.sh"
+        cd $WorkDir/..
         bash "$deps/push.sh"
         ;;
 esac
