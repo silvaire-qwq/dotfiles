@@ -1,0 +1,55 @@
+* {
+	background-image: none;
+	box-shadow: none;
+	font-family: "Liga SFMono Nerd Font";
+}
+
+window {
+	background-color: rgba(30, 30, 46, 0.95);
+}
+
+button {
+	border-color: #b4befe;
+	text-decoration-color: #b4befe;
+	color: #b4befe;
+	background-color: #181825;
+	border-style: solid;
+	border-width: 1px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	border-radius: 1em;
+	transition: all .3s;
+	margin: 5px;
+}
+
+button:focus,
+button:active,
+button:hover {
+	background-color: #313244;
+	outline-style: none;
+}
+
+#lock {
+	background-image: url("/home/arch/.config/wlogout/icons/lock.svg");
+}
+
+#logout {
+	background-image: url("/home/arch/.config/wlogout/icons/logout.svg");
+}
+
+#suspend {
+	background-image: url("/home/arch/.config/wlogout/icons/suspend.svg");
+}
+
+#hibernate {
+	background-image: url("/home/arch/.config/wlogout/icons/hibernate.svg");
+}
+
+#shutdown {
+	background-image: url("/home/arch/.config/wlogout/icons/shutdown.svg");
+}
+
+#reboot {
+	background-image: url("/home/arch/.config/wlogout/icons/reboot.svg");
+}

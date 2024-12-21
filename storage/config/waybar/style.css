@@ -1,0 +1,337 @@
+@import "var.css";
+
+* {
+  border-radius: 0px;
+  font-family:
+    Liga SFMono Nerd Font,
+    FiraCode Nerd Font;
+  font-size: 14px;
+  font-style: normal;
+  min-height: 0;
+}
+
+#custom-Arch-Logo {
+  margin: 5px;
+  margin-left: 6px;
+  margin-right: 3px;
+  color: @main-color;
+  font-size: 18px;
+  border: 1px solid @secborder;
+  background: @seccolor;
+  border-radius: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 4px;
+}
+
+#custom-Backup {
+  font-size: 18px;
+  margin: 5px;
+  margin-left: 0px;
+  border: 1px solid @secborder;
+  background: @seccolor;
+  border-radius: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 7px;
+}
+
+#custom-sd {
+  margin: 5px;
+  border-radius: 30px;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 4px;
+}
+
+window#waybar {
+  background: @background;
+  color: @font;
+  /*border: 1px solid @main-color;
+  border-radius: 14px;*/
+}
+
+#window {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  color: @font;
+  background: @seccolor;
+  font-style: normal;
+  border-radius: 14px;
+  border: 1px solid @secborder;
+}
+
+#workspaces {
+  margin: 5px 5px 5px 2px;
+  background: @seccolor;
+  padding: 0px 5px 0px 5px;
+  border-radius: 14px;
+  border: 1px solid @secborder;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#taskbar.empty {
+  margin: 0px;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0);
+}
+
+#taskbar {
+  margin: 5px 0px 5px 5px;
+  padding: 0px 0px 0px 0px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#taskbar button {
+}
+
+#taskbar button:hover {
+  color: black;
+}
+
+#taskbar button.active {
+  border-bottom: 1px solid @main-color;
+}
+
+#workspaces button {
+  padding: 0px 5px;
+  border-radius: 30px;
+  color: #6c7086;
+}
+
+#workspaces button.active {
+  color: @font;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+#custom-date,
+#clock,
+#network,
+#custom-randwall,
+#custom-launcher {
+  background: transparent;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 8px;
+}
+
+#clock {
+  font-weight: bold;
+  /*border: 1px solid @font;
+  background-color: @seccolor;*/
+  padding-right: 5px;
+  border-radius: 14px;
+  margin-top: 5px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+#battery {
+  font-weight: bold;
+  border: 1px solid @secborder;
+  background-color: @seccolor;
+  border-left: 0px;
+  padding-right: 13px;
+  border-radius: 0px 14px 14px 0px;
+  margin-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+#pulseaudio {
+  font-weight: bold;
+  border-top: 1px solid @secborder;
+  border-bottom: 1px solid @secborder;
+  background-color: @seccolor;
+  padding-left: 10px;
+  margin-top: 5px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#custom-date {
+  color: #d5869b;
+}
+
+#custom-power {
+  color: #24285b;
+  background-color: #db4b4b;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  padding: 5px 10px;
+}
+
+#tray {
+  background-color: @seccolor;
+  padding: 0px 10px 0px 10px;
+  border-radius: 14px;
+  border: 1px solid @secborder;
+  margin: 5px 0px 5px 5px;
+}
+
+#backlight {
+  font-weight: bold;
+  border: 1px solid @secborder;
+  border-right: 0px;
+  background-color: @seccolor;
+  color: @font;
+  border-radius: 14px 0px 0px 14px;
+  margin: 5px 0px 5px 0px;
+  padding-left: 13px;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+#network {
+  color: @font;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+#custom-randwall {
+  color: @font;
+  border-radius: 8px;
+  margin-right: 0px;
+}
+
+#custom-launcher {
+  color: #e5809e;
+  background-color: #1e1e2e;
+  border-radius: 0px 24px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 0 20px 0 15px;
+  font-size: 20px;
+}
+
+#custom-launcher button:hover {
+  background-color: #fb4954;
+  color: transparent;
+  border-radius: 8px;
+  margin-right: -5px;
+  margin-left: 10px;
+}
+
+#custom-playerctl {
+  background: #1e1e2e;
+  padding-left: 15px;
+  padding-right: 14px;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#custom-playerlabel {
+  background: transparent;
+  padding-left: 10px;
+  padding-right: 15px;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#custom-wf-recorder {
+  padding: 0 20px;
+  color: #e5809e;
+  background-color: #1e1e2e;
+}
+
+#keyboard-state {
+  background-color: #1e1e2e;
+  /*color: #FABD2D;*/
+  border-radius: 30px;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#keyboard-state label.locked {
+  background-color: #1e1e2e;
+  /*color: #FABD2D;*/
+  border-radius: 30px;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#keyboard-state label.locked {
+  background-color: #1e1e2e;
+  /*color: #FABD2D;*/
+  border-radius: 30px;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#cpu {
+  border-top: 1px solid @secborder;
+  border-bottom: 1px solid @secborder;
+  border-left: 1px solid @secborder;
+  background-color: @seccolor;
+  border-radius: 14px 0px 0px 14px;
+  margin: 5px 0px 5px 5px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#memory {
+  border-top: 1px solid @secborder;
+  border-bottom: 1px solid @secborder;
+  background-color: @seccolor;
+  border-radius: 0px;
+  /*color: #85A598;*/
+  margin: 5px 0px 5px 0px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#disk {
+  /*color: #8EC07C;*/
+  border-top: 1px solid @secborder;
+  border-bottom: 1px solid @secborder;
+  border-right: 1px solid @secborder;
+  background-color: @seccolor;
+  border-radius: 0px 14px 14px 0px;
+
+  margin: 5px 0px 5px 0px;
+  padding: 0px 10px 0px 10px;
+  font-weight: bold;
+}
+
+#custom-hyprpicker {
+  background-color: #1e1e2e;
+  /*color: #8EC07C;*/
+  border-radius: 30px;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0px 11px 0px 9px;
+  font-weight: bold;
+}

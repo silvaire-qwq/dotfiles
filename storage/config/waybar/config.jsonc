@@ -1,0 +1,138 @@
+{
+  "position": "top",
+  "height": 30,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "modules-left": [
+    "custom/Arch-Logo",
+    "hyprland/workspaces",
+    // "wlr/taskbar",
+    "hyprland/window",
+  ],
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20,
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-icons": {
+      "default": [
+        " ",
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+    },
+  },
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    // "custom/randwall",
+    // "network",
+    "tray",
+    "cpu",
+    "memory",
+    "disk",
+    "backlight",
+    "pulseaudio",
+    "battery",
+  ],
+  "hyprland/window": {
+    "format": "{}",
+  },
+  "clock": {
+    "format": " {:%a. %d %b. %H:%M:%S} ",
+    "tooltip": "true",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "interval": 1,
+    "on-click": "wlogout",
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "active-only": false,
+    "all-outputs": true,
+    "disable-scroll": true,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "on-click": "activate",
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-theme": "Win11-dark",
+    "max-length": 5,
+    "rotate": 0,
+    "icon-size": 20,
+    "spacing": 0,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-right": "close",
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition",
+    },
+  },
+  "memory": {
+    "format": "  {}%",
+    "format-alt": "  {used}/{total} GiB",
+    "interval": 1,
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "format-alt": "  {avg_frequency} GHz",
+    "interval": 1,
+  },
+  "disk": {
+    "format": "󰋊 {percentage_used}%",
+    "format-alt": "󰋊 {used}/{total} GiB",
+    "interval": 5,
+    "path": "/",
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 5,
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": {
+      "default": [
+        "󰽤",
+        "",
+        "",
+        "",
+        " "
+      ],
+    },
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " [MUTED]",
+    "format-icons": {
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ],
+    },
+    "on-click": "pulsemixer --toggle-mute",
+    "on-scroll-up": "amixer set Master 3%+",
+    "on-scroll-down": "amixer set Master 3%-",
+  },
+  "custom/Arch-Logo": {
+    "format": " 󰣇 ",
+    "on-click": "rofi -show drun",
+  },
+  "custom/sd": {
+    "format": "  ",
+    "on-click": "wlogout",
+  },
+  "custom/Backup": {
+    "format": " ",
+    "on-click": "/home/arch/.config/waybar/scripts/backup.sh",
+  },
+}
