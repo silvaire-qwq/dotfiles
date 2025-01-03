@@ -5,9 +5,10 @@ clear
 cd ~/Dotfiles
 
 if [[ $(sudo git diff | wc -l) -ne 0 ]]; then
-	# Need Update
-	sudo git add .
-	sudo git commit -m "* Started On $(date "+%Y/%m/%d %H:%M:%S")"
+	# Add Files
+	sudo git add . &>/dev/null
+	# Commit
+	sudo git commit -m "* Started On $(date "+%Y/%m/%d %H:%M:%S")" &>/dev/null
 	# Remote
 	sudo git push -uf origin main
 fi
