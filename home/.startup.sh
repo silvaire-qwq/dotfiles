@@ -10,6 +10,7 @@ if [[ $(sudo git diff | wc -l) -ne 0 ]]; then
 	# Commit
 	sudo git commit -m "* Started On $(date "+%Y/%m/%d %H:%M:%S")" &>/dev/null
 	# Remote
+	export LANG="en_US.UTF-8"
 	sudo git push -uf origin main
 fi
 
