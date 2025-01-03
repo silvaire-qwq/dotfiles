@@ -10,6 +10,7 @@ adwaita-cursors
 adwaita-icon-theme
 adwaita-icon-theme-legacy
 aircrack-ng
+alacritty
 alembic
 alsa-card-profiles
 alsa-lib
@@ -264,6 +265,8 @@ gettext
 gflags
 ghc-libs
 ghostscript
+ghostty-shell-integration
+ghostty-terminfo
 giflib
 girara
 git
@@ -960,7 +963,6 @@ linux-api-headers
 linux-firmware
 linux-firmware-whence
 linux-xanmod-linux-bin-x64v3
-linuxqq
 lld
 llvm
 llvm-libs

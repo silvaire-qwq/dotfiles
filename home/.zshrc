@@ -111,7 +111,6 @@ unset zinit_temp
 
 # /---------- Aliases ----------/
 
-alias 'kittyrc'='sudo nvim ~/.config/kitty/kitty.conf'
 alias 'banner'='sudo pacman -Rscn'
 alias 'ban'='sudo pacman -R'
 alias 'sync'='paru'
@@ -138,4 +137,3 @@ alias 'fw'="fzf --disabled --bind 'change:reload:rg {q}'"
 alias 'ff'="find . | fzf"
 alias 'c'='cava'
 alias 'sd'='shutdown 0'
-
