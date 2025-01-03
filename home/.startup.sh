@@ -7,8 +7,8 @@ cd ~/Dotfiles
 if [[ $(sudo git diff | wc -l) -ne 0 ]]; then
 	# Need Update
 	sudo git add .
-	sudo git commit -m "[AP] Boot On $(date "+%Y/%m/%d %H:%M:%S")"
-	sudo git push
+	sudo git commit -m "* Started On $(date "+%Y/%m/%d %H:%M:%S")"
+	sudo git push -uf origin main
 fi
 
 # Start Hyprland
