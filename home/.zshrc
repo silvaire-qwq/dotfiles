@@ -69,6 +69,10 @@ export FZF_DEFAULT_OPTS=" \
 --no-scrollbar --border-label "Search" \
 "
 
+# Source Profiles & Envs
+. /etc/profile
+. /etc/environment
+
 # Zoxide Init
 eval "$(zoxide init zsh)"
 

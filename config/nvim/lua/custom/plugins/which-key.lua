@@ -10,7 +10,7 @@ return { -- Useful plugin to show you pending keybinds.
 				end
 				return vim.list_contains({ "v", "<C-V>", "V" }, ctx.mode)
 			end,
-			preset = "modern", -- "helix",
+			preset = "helix",
 			icons = {
 				colors = true,
 				keys = {
