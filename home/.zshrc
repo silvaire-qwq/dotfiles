@@ -82,6 +82,11 @@ eval "$(thefuck --alias)"
 # Starship Init
 eval "$(starship init zsh)"
 
+# Bun Init 
+[ -s "/home/arch/.bun/_bun" ] && source "/home/arch/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # /---------- Plugins Manager ----------/
 
 autoload -Uz compinit
@@ -141,3 +146,4 @@ alias 'fw'="fzf --disabled --bind 'change:reload:rg {q}'"
 alias 'ff'="find . | fzf"
 alias 'c'='cava'
 alias 'sd'='shutdown 0'
+
