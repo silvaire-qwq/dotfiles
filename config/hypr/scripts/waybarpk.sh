@@ -7,3 +7,4 @@ sudo sed -i "s/SB/$WaybarSB/g" ~/.config/waybar/var.css
 sudo sed -i "s/SC/$WaybarSC/g" ~/.config/waybar/var.css
 sudo sed -i "s/MC/#$WaybarMain/g" ~/.config/waybar/var.css
 sudo sed -i "s/FT/#$WaybarFont/g" ~/.config/waybar/var.css
+

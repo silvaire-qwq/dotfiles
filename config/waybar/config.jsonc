@@ -42,7 +42,7 @@
     "backlight",
     "pulseaudio",
     "battery",
-    "tray",
+    "group/sys-tray",
   ],
   "hyprland/window": {
     "format": "{}",
@@ -93,9 +93,32 @@
     "interval": 5,
     "path": "/",
   },
+  // "tray": {
+  // "icon-size": 20,
+  // "spacing": 5,
+  // },
   "tray": {
     "icon-size": 20,
-    "spacing": 5,
+    "spacing": 6
+  },
+  "custom/tray-collapsed": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/tray-left-end": {
+    "format": " ",
+    "tooltip": false
+  },
+  "group/sys-tray": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 600,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/tray-collapsed",
+      "tray"
+    ]
   },
   "backlight": {
     "format": "{icon} {percent}%",

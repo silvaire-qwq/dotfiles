@@ -14,17 +14,18 @@
   margin: 5px;
   margin-left: 6px;
   margin-right: 3px;
-  color: @main-color;
-  font-size: 18px;
-  border: 1px solid @secborder;
-  background: @seccolor;
+  background: @main-color;
+  font-size: 20px;
+  /* border: 1px solid @secborder; */
+  color: @background;
   border-radius: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 0px;
-  padding-right: 4px;
+  padding-left: 2px;
+  padding-right: 5px;
 }
 
+#custom-tray-collapsed,
 #custom-Backup {
   font-size: 18px;
   margin: 5px;
@@ -34,8 +35,13 @@
   border-radius: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 7px;
+  padding-left: 13px;
+  padding-right: 10px;
+}
+
+#custom-tray-collapsed {
+  padding-left: 11px;
+  padding-right: 14px;
 }
 
 #custom-sd {

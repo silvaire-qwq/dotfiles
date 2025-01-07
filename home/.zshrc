@@ -57,9 +57,6 @@ local command_not_found_handler() {
 local EXA_DEFAULT_OPTS=(
     '--color=auto'
     '--icons=auto'
-    '--binary'
-    '--header'
-    '--git'
     '--sort=type'
     '-M'
     '--time-style=relative'
