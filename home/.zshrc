@@ -137,7 +137,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # hide EOL sign ('%')
-PROMPT_EOL_MARK=""
+export PROMPT_EOL_MARK=""
 
 # /---------- Plugins Manager ----------/
 
@@ -175,6 +175,7 @@ unset zinit_temp
 if [[ $(command -v pacman) ]]; then
     alias 'banner'='sudo pacman -Rscn'
     alias 'ban'='sudo pacman -R'
+    alias 'pacman'='sudo pacman'
 fi
 
 if [[ $(command -v paru) ]]; then

@@ -12,6 +12,8 @@ adwaita-icon-theme-legacy
 aircrack-ng
 alacritty
 alembic
+alhp-keyring
+alhp-mirrorlist
 alsa-card-profiles
 alsa-lib
 alsa-plugins
@@ -61,7 +63,6 @@ bind
 binutils
 bison
 blas
-blender
 blosc
 blueman
 bluez
@@ -294,7 +295,6 @@ gnome-desktop-common
 gnome-disk-utility
 gnome-online-accounts
 gnome-themes-extra
-gnome-tweaks
 gnulib-l10n
 gnupg
 gnutls
@@ -585,6 +585,7 @@ hicolor-icon-theme
 hidapi
 highway
 hiredis
+hmcl
 hping
 hslua-cli
 htop
@@ -657,6 +658,7 @@ kauth5
 kbd
 kbookmarks
 kbookmarks5
+kcmutils
 kcodecs
 kcodecs5
 kcolorscheme
@@ -1142,7 +1144,7 @@ linux-apfs-rw-dkms-git
 linux-api-headers
 linux-firmware
 linux-firmware-whence
-linux-xanmod-linux-bin-x64v3
+linux-xanmod-lts-linux-bin-x64v3
 lld
 llvm
 llvm-libs
@@ -1720,6 +1722,7 @@ seabios
 seatd
 sed
 semver
+sequoia-sqv
 serd
 serf
 shaderc
@@ -1784,8 +1787,6 @@ tevent
 texinfo
 thefuck
 thin-provisioning-tools
-thunar
-thunar-archive-plugin
 time
 timeshift
 tinysparql
@@ -1990,7 +1991,6 @@ yazi-git
 yesplaymusic
 yq
 yyjson
-zathura
 zellij
 zenity
 zeromq

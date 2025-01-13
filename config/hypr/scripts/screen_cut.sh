@@ -1,6 +1,6 @@
 #!/bin/sh
 
-grim -g "$(slurp -d -b "#1e1e2e66" -c "#B4BEFEFF" -s "#00000000" -F "Liga SFMono Nerd Font")" - | wl-copy
+grim -g "$(slurp -d -b "#1e1e2eaa" -c "#B4BEFEff" -s "#00000000" -F "Liga SFMono Nerd Font")" - | wl-copy
 export scrd="$(date +%Y%m%d%H%M%S)"
 wl-paste >>/home/arch/图片/Screenshots/$scrd.png
 echo $(file /home/arch/图片/Screenshots/$scrd.png) >>/home/arch/图片/Screenshots/$scrd.check
