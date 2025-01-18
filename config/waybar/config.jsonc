@@ -42,10 +42,18 @@
     "backlight",
     "pulseaudio",
     "battery",
+    // "custom/pacman",
     "group/sys-tray",
   ],
   "hyprland/window": {
     "format": "{}",
+  },
+  "custom/pacman": {
+    "format": "{} ",
+    "interval": 3600, // every hour
+    "exec": "pacman -Qu | wc -l", // # of updates
+    "exec-if": "exit 0", // always run; consider advanced run conditions
+    "signal": 8
   },
   "clock": {
     "format": " {:%a. %d %b. %H:%M:%S} ",

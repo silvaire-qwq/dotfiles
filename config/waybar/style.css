@@ -14,10 +14,10 @@
   margin: 5px;
   margin-left: 6px;
   margin-right: 3px;
-  background: @main-color;
+  color: @main-color;
   font-size: 20px;
-  /* border: 1px solid @secborder; */
-  color: @background;
+  border: 1px solid @secborder;
+  background: @seccolor;
   border-radius: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -26,6 +26,7 @@
 }
 
 #custom-tray-collapsed,
+#custom-pacman,
 #custom-Backup {
   font-size: 18px;
   margin: 5px;
@@ -38,7 +39,10 @@
   padding-left: 13px;
   padding-right: 14px;
 }
-
+#custom-pacman {
+  padding-right: 20px;
+  font-size: 15px;
+}
 #custom-tray-collapsed {
   padding-left: 13px;
   padding-right: 15px;

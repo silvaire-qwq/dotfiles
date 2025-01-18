@@ -190,6 +190,7 @@ electron30
 electron31
 electron32
 electron33
+electron34
 elementary-icon-theme
 elinks
 ell
@@ -200,6 +201,7 @@ encfs
 enchant
 erofs-utils
 ethtool
+evillimiter
 exempi
 exfat-utils
 exiv2
@@ -1186,6 +1188,7 @@ mdadm
 media-player-info
 mesa
 meson
+metasploit
 micro
 minizip
 minizip-ng
@@ -1797,6 +1800,8 @@ tlpui
 tmux
 tokei
 tomlplusplus
+tor
+tor-browser
 totem-pl-parser
 tpm2-tss
 translate-shell

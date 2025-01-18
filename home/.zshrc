@@ -20,6 +20,7 @@ local LIGHT=(
     ael-code/zsh-colored-man-pages
 )
 
+
 local command_not_found_handler() {
     cmd="$1"
     prt="zsh: command not found: $cmd"
@@ -52,6 +53,9 @@ local command_not_found_handler() {
     fi
     return 127
 }
+
+# remove it to enable 'command_not_found'
+unset command_not_found_handler
 
 # List (exa) Default Options
 local EXA_DEFAULT_OPTS=(
@@ -178,8 +182,8 @@ if [[ $(command -v pacman) ]]; then
     alias 'pacman'='sudo pacman'
 fi
 
-if [[ $(command -v paru) ]]; then
-    alias 'sync'='paru'
+if [[ $(command -v yay) ]]; then
+    alias 'sync'='yay'
     alias 'clean'='ccache -C && sudo rm -rf ~/.cache/yay && sudo rm -rf ~/.cache/paru && sudo rm -rf ~/.local/share/pikaur && sudo pacman -Sc && echo "OK!"'
 fi
 
