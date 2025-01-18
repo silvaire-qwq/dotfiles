@@ -3,22 +3,22 @@ local config = {
 	font_size = 13,
 	font = wezterm.font_with_fallback({
 		{ family = "FiraCode Nerd Font" },
-		{ family = "Liga SFMono Nerd Font", weight = "Medium" },
 		{ family = "Maple Mono NF" },
+		{ family = "Liga SFMono Nerd Font", weight = "Medium" },
 		{ family = "Apple Color Emoji" },
 		{ family = "MiSans VF", weight = "Medium" },
 	}),
-	-- font_rules = {
-	-- {
-	-- italic = true,
-	-- font = wezterm.font({
-	-- Italic Test
-	-- family = "VictorMono Nerd Font",
-	-- weight = "Medium",
-	-- style = "Italic",
-	-- }),
-	-- },
-	-- },
+	font_rules = {
+		{
+			italic = true,
+			font = wezterm.font({
+				-- Italic Test
+				family = "VictorMono Nerd Font",
+				weight = "Medium",
+				style = "Italic",
+			}),
+		},
+	},
 	window_padding = {
 		left = 30,
 		right = 30,
