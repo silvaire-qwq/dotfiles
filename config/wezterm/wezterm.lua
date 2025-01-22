@@ -25,7 +25,7 @@ local config = {
 		top = 30,
 		bottom = 30,
 	},
-	line_height = 1.2,
+	line_height = 1.4,
 	cell_width = 0.9,
 	adjust_window_size_when_changing_font_size = false,
 	enable_wayland = true,
