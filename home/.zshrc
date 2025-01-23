@@ -176,18 +176,18 @@ unset zinit_temp
 
 # /---------- Aliases ----------/
 
-if [[ $(command -v pacman) ]]; then
+if [[ -x $(command -v pacman) ]]; then
     alias 'banner'='sudo pacman -Rscn'
     alias 'ban'='sudo pacman -R'
     alias 'pacman'='sudo pacman'
 fi
 
-if [[ $(command -v yay) ]]; then
+if [[ -x $(command -v yay) ]]; then
     alias 'sync'='yay'
     alias 'clean'='ccache -C && sudo rm -rf ~/.cache/yay && sudo rm -rf ~/.cache/paru && sudo rm -rf ~/.local/share/pikaur && sudo pacman -Sc && echo "OK!"'
 fi
 
-if [[ $(command -v timeshift) ]]; then
+if [[ -x $(command -v timeshift) ]]; then
     alias 'shotlist'='sudo timeshift --list'
     alias 'snapshot'='sudo timeshift --create && sudo update-grub'
     alias 'banshot'='sudo timeshift --delete && sudo update-grub'
@@ -199,16 +199,16 @@ if [[ -f ~/.config/wezterm/wezterm.lua ]]; then
     alias 'weztermrc'='sudo nvim ~/.config/wezterm/wezterm.lua'
 fi
 
-if [[ $(command -v exa) ]]; then
+if [[ -x $(command -v exa) ]]; then
     alias 'l'="exa -lha $EXA_DEFAULT_OPTS"
     alias 'ls'="exa -lh $EXA_DEFAULT_OPTS"
     alias 'la'="exa -lha $EXA_DEFAULT_OPTS"
     alias 'll'="exa -lha $EXA_DEFAULT_OPTS"
 fi
 
-[[ ! $(command -v z) ]] || alias "cd"="z"
+[[ ! -x $(command -v z) ]] || alias "cd"="z"
 [[ ! -d ~/.config/hypr ]] || alias 'hypr'='cd ~/.config/hypr'
-[[ ! $(command -v cava) ]] || alias 'c'='cava'
+[[ ! -x $(command -v cava) ]] || alias 'c'='cava'
 
 # Force Alias
 if [[ 1 -eq 1 ]]; then

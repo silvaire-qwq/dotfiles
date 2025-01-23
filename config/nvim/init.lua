@@ -12,7 +12,6 @@ require("custom.neovide")
 require("custom.keymaps")
 require("custom.autocmds")
 require("custom.filetypes")
-require("custom.hyprlang")
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
