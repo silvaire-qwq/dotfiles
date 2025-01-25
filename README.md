@@ -3,6 +3,9 @@
 ## 🤔 这是什么？
 这是我的 Dotfile（配置文件）仓库。
 
+## 🖼 预览图
+请看最新 Release。
+
 ## 💻 主机
 - 系统: Arch Linux
 - 型号: HUAWEI Matebook X Pro (2018)
