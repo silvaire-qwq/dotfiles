@@ -32,13 +32,13 @@ cat ./pkg.list | sudo pacman -S -
 
 # 重现 ~/.config
 sudo cp -rv ./config/* ~/.config
-sudo cp -r ./config/.* ~/.config # 大概率没有隐藏文件，如果没有可能会报错，但不会发生任何改变。
+sudo cp -rv ./config/.* ~/.config # 大概率没有隐藏文件，如果没有可能会报错，但不会发生任何改变。
 
 # 重现 ~
 sudo cp -rv ./home/* ~ # 大概率没有非隐藏文件，如果没有可能会报错，但不会发生任何改变。
-sudo cp -r ./home/.* ~
+sudo cp -rv ./home/.* ~
 
 # 重现 /etc
-[[ ! -d ./etc ]] || sudo cp -r ./etc/* /etc
-[[ ! -d ./etc ]] || sudo cp -r ./etc/.* /etc # 大概率没有隐藏文件，如果没有可能会报错，但不会发生任何改变。
+[[ ! -d ./etc ]] || sudo cp -rv ./etc/* /etc
+[[ ! -d ./etc ]] || sudo cp -rv ./etc/.* /etc # 大概率没有隐藏文件，如果没有可能会报错，但不会发生任何改变。
 ```
