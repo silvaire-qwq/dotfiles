@@ -17,9 +17,9 @@ local LIGHT=(
     zdharma-continuum/fast-syntax-highlighting
     zsh-users/zsh-syntax-highlighting
     zsh-users/zsh-completions
+    zsh-users/zsh-history-substring-search
     ael-code/zsh-colored-man-pages
 )
-
 
 local command_not_found_handler() {
     cmd="$1"
@@ -134,6 +134,9 @@ eval "$(thefuck --alias)"
 
 # Starship Init
 eval "$(starship init zsh)"
+
+# Prompt Init
+# . ~/.oh-my-zsh/custom/themes/jovial.zsh-theme
 
 # Bun Init 
 [ -s "/home/arch/.bun/_bun" ] && source "/home/arch/.bun/_bun"
