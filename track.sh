@@ -57,6 +57,27 @@ function try() {
   esac
 }
 
+case $1 in
+"enable")
+  if [[ -d ./config ]]; then
+    [[ -d ~/.config ]] || try "mkdir -p ~/.config"
+    try "cp -rf ./config/* ~/.config"
+    try "cp -rf ./config/.* ~/.config"
+  fi
+  if [[ -d ./home ]]; then
+    [[ -d "~" ]] || try "mkdir -p ~"
+    try "cp -rf ./home/* ~"
+    try "cp -rf ./home/.* ~"
+  fi
+  if [[ -d ./etc ]]; then
+    [[ -d /etc ]] || try "mkdir -p /etc"
+    try "cp -rf ./etc/* /etc"
+    try "cp -rf ./etc/.* /etc"
+  fi
+  exit 0
+  ;;
+esac
+
 export dir="/home/$USER/Dotfiles"
 
 if [[ $(id -u) -eq "0" ]]; then
@@ -106,25 +127,6 @@ case $1 in
   try git add .
   try git commit -m 'Auto'
   try git push -uf origin main
-  ;;
-"enable")
-  if [[ -d ./config ]]; then
-    [[ -d ~/.config ]] || try "mkdir -p ~/.config"
-    try "cp -rf ./config/* ~/.config"
-    try "cp -rf ./config/.* ~/.config"
-  fi
-
-  if [[ -d ./home ]]; then
-    [[ -d "~" ]] || try "mkdir -p ~"
-    try "cp -rf ./home/* ~"
-    try "cp -rf ./home/.* ~"
-  fi
-
-  if [[ -d ./etc ]]; then
-    [[ -d /etc ]] || try "mkdir -p /etc"
-    try "cp -rf ./etc/* /etc"
-    try "cp -rf ./etc/.* /etc"
-  fi
   ;;
 "config")
   [[ -d config ]] || try mkdir config
@@ -239,4 +241,3 @@ case $1 in
   ;;
 esac
 # Good bye, 2024 :(   (it is 2024/12/31 23:59:59 now!)
-
