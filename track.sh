@@ -61,18 +61,18 @@ case $1 in
 "enable")
   if [[ -d ./config ]]; then
     [[ -d ~/.config ]] || try "mkdir -p ~/.config"
-    try "cp -rf ./config/* ~/.config"
-    try "cp -rf ./config/.* ~/.config"
+    try "cp -r ./config/* ~/.config"
+    try "cp -r ./config/.* ~/.config"
   fi
   if [[ -d ./home ]]; then
     [[ -d "~" ]] || try "mkdir -p ~"
-    try "cp -rf ./home/* ~"
-    try "cp -rf ./home/.* ~"
+    try "cp -r ./home/* ~"
+    try "cp -r ./home/.* ~"
   fi
   if [[ -d ./etc ]]; then
     [[ -d /etc ]] || try "mkdir -p /etc"
-    try "cp -rf ./etc/* /etc"
-    try "cp -rf ./etc/.* /etc"
+    try "cp -r ./etc/* /etc"
+    try "cp -r ./etc/.* /etc"
   fi
   exit 0
   ;;
