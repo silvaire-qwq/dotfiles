@@ -31,14 +31,14 @@ cd ./dotfiles
 cat ./pkg.list | sudo pacman -S -
 
 # 重现 ~/.config
-[[ ! -d ./config ]] || sudo cp -r ./config/* ~/.config
-[[ ! -d ./config ]] || ([[ ! -f ./config/.* ]] || sudo cp -r ./config/.* ~/.config)
+sudo cp -rv ./config/* ~/.config
+sudo cp -r ./config/.* ~/.config # 大概率没有隐藏文件，如果没有可能会报错，但不会发生任何改变。
 
 # 重现 ~
-[[ ! -d ./home ]] || sudo cp -r ./home/* ~
-[[ ! -d ./home ]] || ([[ ! -f ./home/.* ]] || sudo cp -r ./home/.* ~)
+sudo cp -rv ./home/* ~ # 大概率没有非隐藏文件，如果没有可能会报错，但不会发生任何改变。
+sudo cp -r ./home/.* ~
 
 # 重现 /etc
 [[ ! -d ./etc ]] || sudo cp -r ./etc/* /etc
-[[ ! -d ./etc ]] || ([[ ! -f ./etc/.* ]] || sudo cp -r ./etc/.* /etc)
+[[ ! -d ./etc ]] || sudo cp -r ./etc/.* /etc # 大概率没有隐藏文件，如果没有可能会报错，但不会发生任何改变。
 ```
