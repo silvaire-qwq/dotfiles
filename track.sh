@@ -57,27 +57,6 @@ function try() {
   esac
 }
 
-case $1 in
-"enable")
-  if [[ -d ./config ]]; then
-    [[ -d ~/.config ]] || try "mkdir -p ~/.config"
-    try "cp -r ./config/* ~/.config"
-    try "cp -r ./config/.* ~/.config"
-  fi
-  if [[ -d ./home ]]; then
-    [[ -d "~" ]] || try "mkdir -p ~"
-    try "cp -r ./home/* ~"
-    try "cp -r ./home/.* ~"
-  fi
-  if [[ -d ./etc ]]; then
-    [[ -d /etc ]] || try "mkdir -p /etc"
-    try "cp -r ./etc/* /etc"
-    try "cp -r ./etc/.* /etc"
-  fi
-  exit 0
-  ;;
-esac
-
 export dir="/home/$USER/Dotfiles"
 
 if [[ $(id -u) -eq "0" ]]; then
