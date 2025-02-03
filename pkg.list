@@ -252,6 +252,7 @@ findutils
 firefox
 fish
 flac
+flac1.3
 flatpak
 flatpak-xdg-utils
 flex
@@ -312,13 +313,14 @@ gnome-bluetooth-3.0
 gnome-desktop-4
 gnome-desktop-common
 gnome-disk-utility
+gnome-font-viewer
 gnome-online-accounts
 gnome-themes-extra
 gnulib-l10n
 gnupg
 gnutls
 go
-go-musicfox-git
+go-musicfox-bin
 go-tools
 gobject-introspection
 gobject-introspection-runtime
@@ -889,6 +891,7 @@ libavif
 libayatana-appindicator
 libayatana-indicator
 libb2
+libblake3
 libblockdev
 libblockdev-crypto
 libblockdev-fs
@@ -1285,6 +1288,7 @@ museeks-bin
 musikcube-bin
 musikcube-bin-debug
 nano
+nasm
 nautilus
 navi
 ncdu
@@ -1910,6 +1914,8 @@ spice
 spice-gtk
 spice-protocol
 spirv-tools
+spotifox-bin
+spotifox-bin-debug
 sqlite
 squashfs-tools
 squashfuse
