@@ -1,4 +1,5 @@
 7-zip-full
+a52dec
 aalib
 abseil-cpp
 accountsservice
@@ -37,6 +38,7 @@ archlinux-appstream-data
 archlinux-keyring
 argon2
 aria2
+aribb24
 asciinema
 aspnet-runtime
 assimp
@@ -116,6 +118,7 @@ clash-meta
 cmake
 cmatrix
 cmd-wrapped-bin
+cmus
 colord
 colord-gtk-common
 colord-gtk4
@@ -234,6 +237,7 @@ fcitx5-material-color
 fcitx5-pinyin-moegirl
 fcitx5-qt
 fcitx5-rime
+fd
 feishu-bin
 ffcall
 ffmpeg
@@ -920,6 +924,7 @@ libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
 libdbusmenu-qt5
+libdca
 libde265
 libdecor
 libdeflate
@@ -932,8 +937,10 @@ libdom
 libdovi
 libdrm
 libdv
+libdvbpsi
 libdvdnav
 libdvdread
+libebml
 libedit
 libei
 libelf
@@ -1005,6 +1012,7 @@ libluv
 libmad
 libmalcontent
 libmanette
+libmatroska
 libmaxminddb
 libmbim
 libmd
@@ -1019,6 +1027,7 @@ libmodplug
 libmpc
 libmpcdec
 libmpdclient
+libmpeg2
 libmspack
 libmtp
 libmysofa
@@ -1103,6 +1112,7 @@ libssh2
 libstemmer
 libsynctex
 libsysprof-capture
+libtar
 libtasn1
 libteam
 libtermkey
@@ -1272,6 +1282,8 @@ mtpfs
 mujs
 multipath-tools
 museeks-bin
+musikcube-bin
+musikcube-bin-debug
 nano
 nautilus
 navi
@@ -2018,6 +2030,7 @@ virt-viewer
 virtiofsd
 visual-studio-code-bin
 vkd3d
+vlc
 vmaf
 volume_key
 vte-common

@@ -115,10 +115,11 @@ return {
 		}
 
 		dashboard.section.buttons.val = {
-			dashboard.button("n", "  New file", "<Cmd>ene <CR>"),
-			dashboard.button("m", "󰏗  Mason", "<Cmd>Mason<CR>"),
-			dashboard.button("c", "  NeoVim Config", "<Cmd>Neotree reveal ~/.config/nvim<CR>"),
-			dashboard.button("q", "  Quit", "<Cmd>qa<CR>"),
+			dashboard.button("n", "New file", "<Cmd>ene <CR>"),
+			dashboard.button("m", "Mason Dashboard", "<Cmd>Mason<CR>"),
+			dashboard.button("l", "Lazy Dashboard", "<Cmd>Lazy<CR>"),
+			dashboard.button("c", "Config", "<Cmd>Neotree reveal ~/.config/nvim<CR>"),
+			dashboard.button("e", "Exit", "<Cmd>qa<CR>"),
 		}
 		for _, a in ipairs(dashboard.section.buttons.val) do
 			a.opts.width = 49

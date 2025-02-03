@@ -21,42 +21,6 @@ local LIGHT=(
     ael-code/zsh-colored-man-pages
 )
 
-local command_not_found_handler() {
-    cmd="$1"
-    prt="zsh: command not found: $cmd"
-    package=$(pacman -Ss "^$cmd$" | grep "/$cmd " | awk -F '/' '{print $2}' | cut -d' ' -f1)
-    SUGGESTION_CMD="NOT FOUND"
-    if [[ -n "$package" ]]; then
-        echo -ne "\e[33;1mWARNING\e[0m  Install $package now? \e[1m[\e[32;1mY\e[0;1m/\e[31;1mn\e[0;1m]\e[0m "
-        read result
-        export result
-        export exitNumbers=$(echo $result | grep "n" | wc -l)
-        if [[ $exitNumbers -ne 0 ]]; then
-            echo -e "\e[33;1mWARNING\e[0m  Exited by $USER"
-        else
-            export log="/tmp/$(date "+%Y%m%d%H%M%S")"
-            sudo pacman -S $package --noconfirm &>$log
-            case $? in
-                "0")
-                    echo -e "\e[32;1mSUCCESS\e[0m  Please run your command again."
-                    ;;
-                *)
-                    echo -e "\e[31;1mERROR\e[0m    Please do it by yourself, because:"
-                    echo -e "\e[90m"
-                    cat $log
-                    echo "\e[0m"
-                    ;;
-            esac
-        fi
-    else
-        echo $prt
-    fi
-    return 127
-}
-
-# remove it to enable 'command_not_found'
-unset command_not_found_handler
-
 # List (exa) Default Options
 local EXA_DEFAULT_OPTS=(
     '--color=auto'
@@ -112,11 +76,13 @@ export SAVEHIST=65535
 
 # FZF Default Opts
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
---color=selected-bg:#45475a \
---height=100% --border --header-lines 1 --tac --tiebreak=begin \
+--color=bg+:#1e1e2e,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#9399b2,header:#f38ba8,info:#b4befe,pointer:#b4befe \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#b4befe,hl+:#b4befe \
+--color=selected-bg:#1e1e2e \
+--color 'border:#45475a,label:#7f849c' \
+--multi \
+--height=50% --border --header-lines 0 --tac --tiebreak=begin \
 --delimiter : \
 --no-scrollbar --border-label "Search" \
 "
