@@ -303,6 +303,7 @@ glib2-docs
 glibc
 glibmm
 glibmm-2.68
+glow
 glslang
 glu
 glusterfs
@@ -1346,6 +1347,7 @@ oc-auxiliary-tools
 ocl-icd
 oh-my-posh
 ollama
+onefetch
 onetbb
 oniguruma
 openal
