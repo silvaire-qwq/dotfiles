@@ -31,23 +31,27 @@ function choose() {
 
 function try() {
   blue "$@"
-  echo -e "\e[90m"
+  echo -e -n "\e[90m"
   eval "$@"
-  echo -e "\e[0m"
   case $? in
-  "0") ;;
+  "0")
+    echo -e -n "\e[0m"
+    ;;
   *)
+    echo -e -n "\e[0m"
     yellow "执行失败"
     choose "要使用更高权限尝试执行吗？"
     case $return in
     "0")
       blue "sudo $@"
-      echo -e "\e[90m"
+      echo -e -n "\e[90m"
       sudo $@
-      echo -e "\e[0m"
       case $? in
-      "0") ;;
+      "0")
+        echo -e -n "\e[0m"
+        ;;
       *)
+        echo -e -n "\e[0m"
         red "失败"
         exit 1
         ;;
