@@ -31,7 +31,9 @@ function choose() {
 
 function try() {
   blue "$@"
+  echo -e "\e[90m"
   eval "$@"
+  echo -e "\e[0m"
   case $? in
   "0") ;;
   *)
@@ -40,7 +42,9 @@ function try() {
     case $return in
     "0")
       blue "sudo $@"
+      echo -e "\e[90m"
       sudo $@
+      echo -e "\e[0m"
       case $? in
       "0") ;;
       *)
