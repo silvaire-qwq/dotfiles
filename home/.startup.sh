@@ -5,8 +5,7 @@ clear
 cd ~/Dotfiles
 if [[ $(sudo git diff | wc -l) -ne 0 ]]; then
 	sudo git add .
-	sudo git commit -m "Local Push on Boot"
-	sudo git push
+	sudo git commit -m "Local Commit on Boot"
 fi
 
 # Start Hyprland
