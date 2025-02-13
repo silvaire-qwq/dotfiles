@@ -4,6 +4,7 @@ aalib
 abseil-cpp
 accountsservice
 acl
+acpi
 ada
 adobe-source-code-pro-fonts
 adobe-source-han-sans-kr-fonts
@@ -182,6 +183,7 @@ dtc
 duf
 duktape
 dunst
+dust
 dxvk-bin
 e2fsprogs
 ebook-tools
@@ -270,6 +272,7 @@ fuse-common
 fuse2
 fuse3
 fzf
+galculator
 garcon
 gawk
 gc
@@ -671,6 +674,7 @@ jdk21-openjdk
 jemalloc
 jmtpfs
 jq
+jre21-zulu-bin-debug
 js128
 json-c
 json-glib
@@ -1110,6 +1114,7 @@ libsoxr
 libspeechd
 libspiro
 libspnav
+libspng
 libsrtp
 libssh
 libssh2
@@ -1949,6 +1954,7 @@ talloc
 tar
 tcl
 tcpdump
+tcsh
 tdb
 telegram-desktop
 terminaltexteffects-git
