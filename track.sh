@@ -92,7 +92,7 @@ if [[ (! -d ".git" && ! -f .manager_lock) || ! -f .manager_lock || ! -d .git ]];
     ;;
   esac
   try git init
-  try git branch -M main
+  try git branch -M mini
   read -p "请输入 GitHub 用户名: " username
   read -p "请输入 GitHub Token: " token
   read -p "请输入仓库链接 (带”.git“、没有“http(s)://”): " link
@@ -113,7 +113,7 @@ case $1 in
   try "pacman -Qq >> ./pkg.list"
   try git add .
   try git commit -m 'Auto'
-  try git push -uf origin main
+  try git push -uf origin mini
   ;;
 "config")
   [[ -d config ]] || try mkdir config

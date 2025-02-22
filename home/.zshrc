@@ -196,4 +196,5 @@ if [[ 1 -eq 1 ]]; then
     alias 9='cd -9'
     alias 'sd'='shutdown 0'
     alias '.zshrc'='nvim ~/.zshrc'
+    alias 'please'='sudo'
 fi

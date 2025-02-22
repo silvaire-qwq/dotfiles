@@ -132,6 +132,7 @@ coreutils
 cowsay
 cpio
 cppdap
+cpupower
 cracklib
 cronie
 crunch
@@ -272,7 +273,6 @@ fuse-common
 fuse2
 fuse3
 fzf
-galculator
 garcon
 gawk
 gc
@@ -774,6 +774,7 @@ lazygit
 lcms2
 ldb
 ldns
+leancrypto
 less
 level-zero-loader
 leveldb
@@ -1204,6 +1205,7 @@ libxss
 libxt
 libxtst
 libxv
+libxvmc
 libxxf86vm
 libyaml
 libyuv
@@ -1215,7 +1217,7 @@ linux-apfs-rw-dkms-git
 linux-api-headers
 linux-firmware
 linux-firmware-whence
-linux-zen
+linux-xanmod-rt
 lld
 llhttp
 llvm
@@ -1257,6 +1259,7 @@ md4c
 mdadm
 media-player-info
 mesa
+mesa-utils
 meson
 metasploit
 micro
@@ -1344,6 +1347,7 @@ nushell-git
 nuspell
 nvidia-utils
 nvm
+nvtop
 nwg-look
 nyancat
 obs-studio
@@ -1740,6 +1744,7 @@ qmltermwidget
 qqc2-desktop-style
 qqc2-desktop-style5
 qrencode
+qt4
 qt5-3d
 qt5-base
 qt5-charts
@@ -1753,6 +1758,7 @@ qt5-graphicaleffects
 qt5-imageformats
 qt5-location
 qt5-lottie
+qt5-lottie-debug
 qt5-multimedia
 qt5-networkauth
 qt5-purchasing
@@ -1899,6 +1905,7 @@ shared-mime-info
 shellcheck
 shfmt
 shiboken6
+simdjson
 slang
 slurp
 smartmontools
@@ -1945,6 +1952,7 @@ syndication5
 syntax-highlighting
 syntax-highlighting5
 sysbench
+syslinux
 systemd
 systemd-boot-pacman-hook
 systemd-libs
@@ -2033,6 +2041,7 @@ v4l-utils
 vala
 vapoursynth
 vde2
+ventoy
 vi
 vid.stab
 vim
@@ -2043,20 +2052,23 @@ virt-manager
 virt-viewer
 virtiofsd
 visual-studio-code-bin
+visual-studio-code-bin-debug
 vkd3d
 vlc
 vmaf
+volk
 volume_key
 vte-common
 vte3
 vulkan-headers
 vulkan-icd-loader
+vulkan-intel
+vulkan-tools
 w3m
 watt-toolkit-bin
 wavpack
 waybar
 waybar-git-debug
-waydroid
 wayland
 wayland-protocols
 webkit2gtk-4.1
@@ -2108,6 +2120,7 @@ xdotool
 xf86-input-libinput
 xf86-input-synaptics
 xf86-input-vmmouse
+xf86-video-intel
 xf86-video-vesa
 xfce4-settings
 xfconf
