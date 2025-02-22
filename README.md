@@ -8,9 +8,9 @@
 
 ## 💻 主机
 - 系统: Arch Linux
-- 型号: HUAWEI Matebook X Pro (2018)
-- CPU: Intel i7-8550U (8)
-- 显卡: Intel UHD Graphics 620
+- 型号: HP Pro Mini 260 G9 Desktop PC
+- CPU: 12th Gen Intel i3-1215U (8)
+- 显卡: Intel Alder Lake-UP3 GT1
 - 内存: 8GB
 
 ## 🧐 位置
