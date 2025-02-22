@@ -11,25 +11,6 @@
     // "wlr/taskbar",
     "hyprland/window",
   ],
-  "battery": {
-    "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 20,
-    },
-    "format": "{icon} {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-icons": {
-      "default": [
-        " ",
-        " ",
-        " ",
-        " ",
-        " "
-      ],
-    },
-  },
   "modules-center": [
     "clock",
   ],
@@ -39,21 +20,14 @@
     "cpu",
     "memory",
     "disk",
-    "backlight",
+    // "backlight",
     "pulseaudio",
-    "battery",
+    // "battery",
     // "custom/pacman",
     "group/sys-tray",
   ],
   "hyprland/window": {
     "format": "{}",
-  },
-  "custom/pacman": {
-    "format": "{} ",
-    "interval": 3600, // every hour
-    "exec": "pacman -Qu | wc -l", // # of updates
-    "exec-if": "exit 0", // always run; consider advanced run conditions
-    "signal": 8
   },
   "clock": {
     "format": " {:%a. %d %b. %H:%M:%S} ",
@@ -96,7 +70,7 @@
     "interval": 1,
   },
   "disk": {
-    "format": "󰋊 {used}",
+    "format": "󰋊 {percentage_used}%",
     "format-alt": "󰋊 {used}/{total}",
     "interval": 5,
     "path": "/",
@@ -128,18 +102,6 @@
       "tray"
     ]
   },
-  "backlight": {
-    "format": "{icon} {percent}%",
-    "format-icons": {
-      "default": [
-        "󰽤",
-        "",
-        "",
-        "",
-        " "
-      ],
-    },
-  },
   "pulseaudio": {
     "format": "{icon} {volume}%",
     "format-muted": " [MUTED]",
@@ -161,9 +123,5 @@
   "custom/sd": {
     "format": "  ",
     "on-click": "wlogout",
-  },
-  "custom/Backup": {
-    "format": " ",
-    "on-click": "/home/arch/.config/waybar/scripts/backup.sh",
   },
 }

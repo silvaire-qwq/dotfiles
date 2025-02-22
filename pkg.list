@@ -1217,7 +1217,8 @@ linux-apfs-rw-dkms-git
 linux-api-headers
 linux-firmware
 linux-firmware-whence
-linux-xanmod-rt
+linux-xanmod-lts-linux-bin-x64v3
+linux-xanmod-lts-linux-headers-bin-x64v3
 lld
 llhttp
 llvm

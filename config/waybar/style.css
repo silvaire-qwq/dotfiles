@@ -162,14 +162,12 @@ window#waybar {
 
 #pulseaudio {
   font-weight: bold;
-  border-top: 1px solid @secborder;
-  border-bottom: 1px solid @secborder;
+  border: 1px solid @secborder;
   background-color: @seccolor;
   padding-left: 14px;
-  margin-top: 5px;
-  padding-right: 5px;
-  margin-bottom: 5px;
-  border-radius: 0px 0px 0px 0px;
+  margin: 5px;
+  padding-right: 13px;
+  border-radius: 14px;
 }
 
 #custom-date {
