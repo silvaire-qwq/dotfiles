@@ -101,6 +101,9 @@ eval "$(thefuck --alias)"
 # Starship Init
 eval "$(starship init zsh)"
 
+# Direnv Init
+# eval "$(direnv hook zsh)"
+
 # Prompt Init
 # . ~/.oh-my-zsh/custom/themes/jovial.zsh-theme
 

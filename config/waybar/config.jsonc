@@ -98,13 +98,13 @@
       "transition-left-to-right": false
     },
     "modules": [
-      "custom/tray-collapsed",
+      // "custom/tray-collapsed",
       "tray"
     ]
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-muted": " [MUTED]",
+    "format-muted": "  0%",
     "format-icons": {
       "default": [
         "󰕿",

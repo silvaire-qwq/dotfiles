@@ -4,7 +4,8 @@
   border-radius: 0px;
   font-family:
     Liga SFMono Nerd Font,
-    FiraCode Nerd Font;
+    FiraCode Nerd Font,
+    MiSans VF;
   font-size: 14px;
   font-style: normal;
   min-height: 0;
@@ -26,7 +27,6 @@
 }
 
 #custom-tray-collapsed,
-#custom-pacman,
 #custom-Backup {
   font-size: 18px;
   margin: 5px;
@@ -82,7 +82,7 @@ window#waybar {
 #workspaces {
   margin: 5px 5px 5px 2px;
   background: @seccolor;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 7px 0px 7px;
   border-radius: 14px;
   border: 1px solid @secborder;
   font-weight: normal;
@@ -117,6 +117,7 @@ window#waybar {
   padding: 0px 5px;
   border-radius: 30px;
   color: #6c7086;
+  font-weight: bold;
 }
 
 #workspaces button.active {
