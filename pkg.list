@@ -22,8 +22,6 @@ alsa-utils
 android-tools
 android-udev
 aom
-apfs-fuse-git
-apfsprogs-git
 apparmor
 appstream
 appstream-glib
@@ -60,6 +58,7 @@ bash
 bash-completion
 bat
 bc
+bin86-debug
 bind
 binutils
 bison
@@ -119,6 +118,7 @@ colord-gtk-common
 colord-gtk4
 compiler-rt
 composefs
+compsize
 containerd
 convertlit
 coreutils
@@ -221,9 +221,11 @@ fakeroot
 fastfetch
 faudio
 fcitx5
+fcitx5-chewing
 fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk
+fcitx5-lua
 fcitx5-material-color
 fcitx5-pinyin-moegirl
 fcitx5-qt
@@ -906,6 +908,7 @@ libcap-ng
 libcdio
 libcdio-paranoia
 libcgif
+libchewing
 libcloudproviders
 libcolord
 libcss
@@ -1186,13 +1189,11 @@ libyaml
 libyuv
 libzip
 licenses
+lilo-debug
 lilv
-linux-apfs-rw-dkms-git
 linux-api-headers
 linux-firmware
 linux-firmware-whence
-linux-xanmod-lts-linux-bin-x64v3
-linux-xanmod-lts-linux-headers-bin-x64v3
 lld
 llhttp
 llvm
@@ -1332,6 +1333,7 @@ oniguruma
 openal
 openbsd-netcat
 opencc
+opencc-doc
 opencl-headers
 opencolorio
 opencore-amr
@@ -1464,7 +1466,6 @@ procps-ng
 progress
 proot-git
 protobuf
-proton-ge-custom-bin
 proxychains-ng
 prrte
 psmisc
@@ -1730,9 +1731,7 @@ rhash
 rime-bopomofo
 rime-cangjie
 rime-essay
-rime-ice-git
 rime-luna-pinyin
-rime-pinyin-moegirl
 rime-prelude
 rime-stroke
 rime-terra-pinyin
@@ -1908,6 +1907,8 @@ tzdata
 uchardet
 udisks2
 unibilium
+unicode-cldr
+unicode-cldr-annotations
 unzip
 update-grub
 upower
