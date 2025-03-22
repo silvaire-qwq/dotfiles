@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 return {
 	font_size = 13,
 	font = wezterm.font_with_fallback({
+		-- { family = "Maple Mono NF CN" },
 		{ family = "CaskaydiaCove Nerd Font" },
 		{ family = "FiraCode Nerd Font" },
 		{ family = "Apple Color Emoji" },

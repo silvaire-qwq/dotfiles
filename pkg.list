@@ -7,6 +7,7 @@ ada
 adobe-source-code-pro-fonts
 adobe-source-han-sans-kr-fonts
 adwaita-cursors
+adwaita-fonts
 adwaita-icon-theme
 adwaita-icon-theme-legacy
 aircrack-ng
@@ -132,6 +133,7 @@ crunch
 cryptsetup
 cups-pk-helper
 curl
+cursor-bin
 dash
 dav1d
 davfs2
@@ -1270,6 +1272,7 @@ mtpfs
 mujs
 musikcube-bin
 musikcube-bin-debug
+naiveproxy
 nano
 nasm
 nautilus
@@ -1895,6 +1898,7 @@ ttf-ibm-plex
 ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 ttf-liberation
+ttf-maple-beta-nf-cn
 ttf-maple-sc-nerd
 ttf-monaco
 ttf-opensans
