@@ -114,8 +114,8 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0px 5px;
-  border-radius: 30px;
+  padding: 0px 7px;
+  border-radius: 15px;
   color: #6c7086;
   font-weight: bold;
 }
@@ -123,7 +123,6 @@ window#waybar {
 #workspaces button.active {
   color: @main-color;
   background-color: transparent;
-  border-radius: 30px;
 }
 
 #custom-date,

@@ -35,6 +35,7 @@ return { -- Useful plugin to show you pending keybinds.
 
 		-- Document existing key chains
 		require("which-key").add({
+			{ "<leader>a", group = "Avante", mode = "n", icon = " " },
 			{ "<leader>n", group = "Note", mode = "n", icon = " " },
 			{ "<leader>g", group = "Git" },
 			{ "<leader>b", group = "Buffer", mode = "n", icon = " " },

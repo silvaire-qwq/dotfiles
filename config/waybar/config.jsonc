@@ -37,17 +37,23 @@
     "on-click": "wlogout",
   },
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": "{name}",
     "active-only": false,
     "all-outputs": true,
     "disable-scroll": true,
     "on-scroll-up": "hyprctl dispatch workspace -1",
     "on-scroll-down": "hyprctl dispatch workspace +1",
     "on-click": "activate",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    }
   },
   "wlr/taskbar": {
     "format": "{icon}",
-    "icon-theme": "Win11-dark",
+    // "icon-theme": "Win11-dark",
     "max-length": 5,
     "rotate": 0,
     "icon-size": 20,
@@ -113,8 +119,8 @@
       ],
     },
     "on-click": "pulsemixer --toggle-mute",
-    "on-scroll-up": "amixer set Master 3%+",
-    "on-scroll-down": "amixer set Master 3%-",
+    "on-scroll-up": "amixer set Master 5%+",
+    "on-scroll-down": "amixer set Master 5%-",
   },
   "custom/Arch-Logo": {
     "format": " 󰣇 ",

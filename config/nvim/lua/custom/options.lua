@@ -76,3 +76,6 @@ vim.g.bigfile_size = 1024 * 1024 * 1.5 -- 1.5 MB
 
 -- Tab Stop
 vim.o.tabstop = 4
+
+-- Copilot No Tab Map
+vim.g.copilot_no_tab_map = true
