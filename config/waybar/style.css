@@ -3,6 +3,7 @@
 * {
   border-radius: 0px;
   font-family:
+    RecMonoCasual Nerd Font,
     Liga SFMono Nerd Font,
     FiraCode Nerd Font,
     MiSans VF;
@@ -12,48 +13,44 @@
 }
 
 #custom-Arch-Logo {
-  margin: 5px;
-  margin-left: 6px;
-  margin-right: 3px;
-  color: @main-color;
-  font-size: 20px;
-  border: 1px solid @secborder;
-  background: @seccolor;
+  margin: 5px 3px 5px 5px; /* 调整上下边距为5px */
+  color: @background;
+  font-size: 18px;
+  border: 1px solid @main-color;
+  background: @main-color;
   border-radius: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 2px;
-  padding-right: 5px;
+  padding: 4px 4px 4px 0px;
 }
 
 #custom-tray-collapsed,
 #custom-Backup {
   font-size: 18px;
-  margin: 5px;
-  margin-left: 0px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   border: 1px solid @secborder;
   background: @seccolor;
   border-radius: 14px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 13px;
   padding-right: 14px;
 }
+
 #custom-pacman {
   padding-right: 20px;
-  font-size: 15px;
+  font-size: 14px;
 }
+
 #custom-tray-collapsed {
   padding-left: 13px;
-  padding-right: 15px;
+  padding-right: 14px;
 }
 
 #custom-sd {
-  margin: 5px;
-  border-radius: 30px;
+  margin: 5px; /* 调整上下边距为5px */
+  border-radius: 14px;
   font-size: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 0px;
   padding-right: 4px;
 }
@@ -61,16 +58,14 @@
 window#waybar {
   background: @background;
   color: @font;
-  /*border: 1px solid @main-color;
-  border-radius: 13px;*/
+  /* border: 1px solid @main-color; */
+  /* border-radius: 13px; */
 }
 
 #window {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   font-weight: normal;
   color: @font;
   background: @seccolor;
@@ -80,7 +75,7 @@ window#waybar {
 }
 
 #workspaces {
-  margin: 5px 5px 5px 2px;
+  margin: 5px 4px 5px 2px; /* 调整上下边距为5px */
   background: @seccolor;
   padding: 0px 7px 0px 7px;
   border-radius: 14px;
@@ -90,14 +85,14 @@ window#waybar {
 }
 
 #taskbar.empty {
-  margin: 0px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   padding: 0px;
   background: rgba(0, 0, 0, 0);
 }
 
 #taskbar {
-  margin: 5px 0px 5px 5px;
-  padding: 0px 0px 0px 0px;
+  margin: 5px 0px 5px 4px; /* 调整上下边距为5px */
+  padding: 0px;
   font-weight: normal;
   font-style: normal;
 }
@@ -115,7 +110,7 @@ window#waybar {
 
 #workspaces button {
   padding: 0px 7px;
-  border-radius: 15px;
+  border-radius: 14px;
   color: #6c7086;
   font-weight: bold;
 }
@@ -131,20 +126,19 @@ window#waybar {
 #custom-randwall,
 #custom-launcher {
   background: transparent;
-  padding: 5px 5px 5px 5px;
-  margin: 5px 5px 5px 5px;
-  border-radius: 8px;
+  padding: 4px;
+  margin: 5px; /* 调整上下边距为5px */
+  border-radius: 14px;
 }
 
 #clock {
   font-weight: bold;
-  /*border: 1px solid @font;
-  background-color: @seccolor;*/
-  padding-right: 5px;
+  border: 1px solid @secborder;
+  background-color: @seccolor;
+  padding-right: 4px;
   border-radius: 14px;
-  margin-top: 5px;
-  padding-left: 5px;
-  margin-bottom: 5px;
+  margin: 5px 5px 5px 0px; /* 调整上下边距为5px */
+  padding-left: 4px;
 }
 
 #battery {
@@ -154,10 +148,8 @@ window#waybar {
   border-left: 0px;
   padding-right: 13px;
   border-radius: 0px 14px 14px 0px;
-  margin-top: 5px;
+  margin: 5px 4px 5px 0px; /* 调整上下边距为5px */
   padding-left: 14px;
-  margin-bottom: 5px;
-  margin-right: 5px;
 }
 
 #pulseaudio {
@@ -165,24 +157,17 @@ window#waybar {
   border: 1px solid @secborder;
   background-color: @seccolor;
   padding-left: 14px;
-  margin: 5px;
+  margin: 5px; /* 调整上下边距为5px */
   padding-right: 13px;
   border-radius: 14px;
 }
 
-#custom-date {
-  color: #d5869b;
-}
-
 #custom-power {
-  color: #24285b;
+  color: #24284b;
   background-color: #db4b4b;
   border-radius: 5px;
-  margin-right: 14px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0px;
-  padding: 5px 14px;
+  margin: 5px 14px 5px 0px; /* 调整上下边距为5px */
+  padding: 4px 14px;
 }
 
 #tray {
@@ -190,7 +175,7 @@ window#waybar {
   padding: 0px 14px 0px 14px;
   border-radius: 14px;
   border: 1px solid @secborder;
-  margin: 5px 5px 5px 0px;
+  margin: 5px 5px 5px 0px; /* 调整上下边距为5px */
 }
 
 #backlight {
@@ -200,49 +185,46 @@ window#waybar {
   background-color: @seccolor;
   color: @font;
   border-radius: 14px 0px 0px 14px;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   padding-left: 13px;
-  margin-left: 5px;
-  padding-right: 5px;
+  padding-right: 4px;
 }
 
 #network {
   color: @font;
-  border-radius: 8px;
-  margin-right: 5px;
+  border-radius: 14px;
+  margin: 5px 4px 5px 0px; /* 调整上下边距为5px */
 }
 
 #custom-randwall {
   color: @font;
-  border-radius: 8px;
-  margin-right: 0px;
+  border-radius: 14px;
+  margin: 5px; /* 调整上下边距为5px */
 }
 
 #custom-launcher {
-  color: #e5809e;
+  color: #e4809e;
   background-color: #1e1e2e;
-  border-radius: 0px 24px 0px 0px;
-  margin: 0px 0px 0px 0px;
-  padding: 0 20px 0 15px;
+  border-radius: 0px 20px 0px 0px;
+  margin: 5px; /* 调整上下边距为5px */
+  padding: 0 20px 0 14px;
   font-size: 20px;
 }
 
 #custom-launcher button:hover {
-  background-color: #fb4954;
+  background-color: #fb4944;
   color: transparent;
-  border-radius: 8px;
-  margin-right: -5px;
+  border-radius: 14px;
+  margin-right: -4px;
   margin-left: 14px;
 }
 
 #custom-playerctl {
   background: #1e1e2e;
-  padding-left: 15px;
+  padding-left: 14px;
   padding-right: 14px;
-  border-radius: 30px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 0px;
+  border-radius: 14px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   font-weight: normal;
   font-style: normal;
   font-size: 30px;
@@ -251,49 +233,25 @@ window#waybar {
 #custom-playerlabel {
   background: transparent;
   padding-left: 14px;
-  padding-right: 15px;
-  border-radius: 30px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-right: 14px;
+  border-radius: 14px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   font-weight: normal;
   font-style: normal;
 }
 
 #custom-wf-recorder {
   padding: 0 20px;
-  color: #e5809e;
+  color: #e4809e;
   background-color: #1e1e2e;
+  border-radius: 14px;
+  margin: 5px; /* 调整上下边距为5px */
 }
 
 #keyboard-state {
   background-color: #1e1e2e;
-  /*color: #FABD2D;*/
-  border-radius: 30px;
-  margin: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 0px 14px 0px 14px;
-  font-weight: bold;
-}
-
-#keyboard-state label.locked {
-  background-color: #1e1e2e;
-  /*color: #FABD2D;*/
-  border-radius: 30px;
-  margin: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 0px 14px 0px 14px;
-  font-weight: bold;
-}
-
-#keyboard-state label.locked {
-  background-color: #1e1e2e;
-  /*color: #FABD2D;*/
-  border-radius: 30px;
-  margin: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  border-radius: 14px;
+  margin: 5px; /* 调整上下边距为5px */
   padding: 0px 14px 0px 14px;
   font-weight: bold;
 }
@@ -304,7 +262,7 @@ window#waybar {
   border-left: 1px solid @secborder;
   background-color: @seccolor;
   border-radius: 14px 0px 0px 14px;
-  margin: 5px 0px 5px 5px;
+  margin: 5px 0px 5px 4px; /* 调整上下边距为5px */
   padding: 0px 14px 0px 14px;
   font-weight: bold;
 }
@@ -314,32 +272,26 @@ window#waybar {
   border-bottom: 1px solid @secborder;
   background-color: @seccolor;
   border-radius: 0px;
-  /*color: #85A598;*/
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   padding: 0px 14px 0px 14px;
   font-weight: bold;
 }
 
 #disk {
-  /*color: #8EC07C;*/
   border-top: 1px solid @secborder;
   border-bottom: 1px solid @secborder;
   border-right: 1px solid @secborder;
   background-color: @seccolor;
   border-radius: 0px 14px 14px 0px;
-
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px; /* 调整上下边距为5px */
   padding: 0px 14px 0px 14px;
   font-weight: bold;
 }
 
 #custom-hyprpicker {
   background-color: #1e1e2e;
-  /*color: #8EC07C;*/
-  border-radius: 30px;
-  margin: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  border-radius: 14px;
+  margin: 5px; /* 调整上下边距为5px */
   padding: 0px 11px 0px 9px;
   font-weight: bold;
 }

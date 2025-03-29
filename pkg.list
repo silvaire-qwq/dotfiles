@@ -367,6 +367,7 @@ gts
 guile
 gum
 gupnp
+gupnp-dlna
 gupnp-igd
 gvfs
 gzip
@@ -768,6 +769,7 @@ level-zero-loader
 leveldb
 lib32-acl
 lib32-alsa-lib
+lib32-audit
 lib32-brotli
 lib32-bzip2
 lib32-curl
@@ -936,6 +938,7 @@ libdrm
 libdv
 libdvdnav
 libdvdread
+libebur128
 libedit
 libei
 libelf
@@ -1030,6 +1033,7 @@ libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
+libnfs
 libnftnl
 libnghttp2
 libnghttp3
@@ -1193,6 +1197,7 @@ libzip
 licenses
 lilo-debug
 lilv
+links
 linux-api-headers
 linux-firmware
 linux-firmware-whence
@@ -1568,6 +1573,7 @@ python-pbs-installer
 python-pdm
 python-pexpect
 python-pip
+python-pipx
 python-pkginfo
 python-platformdirs
 python-pluggy
@@ -1620,11 +1626,13 @@ python-tqdm
 python-trove-classifiers
 python-truststore
 python-typeguard
+python-typing-inspection
 python-typing_extensions
 python-ujson
 python-unearth
 python-url-normalize
 python-urllib3
+python-userpath
 python-validate-pyproject
 python-virtualenv
 python-wcwidth
@@ -1774,8 +1782,8 @@ ruby-typeprof
 rubygems
 run-parts
 runc
-rust
 rust-std-nightly-x86_64-unknown-linux-gnu
+rustup
 samba
 sane
 sassc
@@ -1859,6 +1867,7 @@ tdb
 telegram-desktop
 terminaltexteffects-git
 terminus-font
+termpicker
 tevent
 texinfo
 thefuck
@@ -1898,7 +1907,7 @@ ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-maple-beta-nf-cn
-ttf-maple-sc-nerd
+ttf-maplemono-nf-cn
 ttf-monaco
 ttf-opensans
 ttf-terminus-nerd

@@ -26,6 +26,12 @@ require("conform").setup({
 		typst = { "typstyle" },
 		nix = { "nixfmt" },
 		yaml = { "prettierd" },
+		toml = { "prettierd" },
+		json = { "prettierd" },
+		javascript = { "prettierd" },
+		javascriptreact = { "prettierd" },
+		typescript = { "prettierd" },
+		vue = { "prettierd" },
 	},
 	formatters = {
 		cbfmt = {

@@ -9,11 +9,9 @@
     "custom/Arch-Logo",
     "hyprland/workspaces",
     // "wlr/taskbar",
-    "hyprland/window",
+    "hyprland/window"
   ],
-  "modules-center": [
-    "clock",
-  ],
+  "modules-center": [],
   "modules-right": [
     // "custom/randwall",
     // "network",
@@ -24,17 +22,18 @@
     "pulseaudio",
     // "battery",
     // "custom/pacman",
-    "group/sys-tray",
+    "clock",
+    "group/sys-tray"
   ],
   "hyprland/window": {
-    "format": "{}",
+    "format": "{}"
   },
   "clock": {
-    "format": " {:%a. %d %b. %H:%M:%S} ",
+    "format": " {:%a. %d %b. %H:%M} ",
     "tooltip": "true",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "interval": 1,
-    "on-click": "wlogout",
+    "on-click": "wlogout"
   },
   "hyprland/workspaces": {
     "format": "{name}",
@@ -62,24 +61,24 @@
     "on-click": "activate",
     "on-click-right": "close",
     "app_ids-mapping": {
-      "firefoxdeveloperedition": "firefox-developer-edition",
-    },
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    }
   },
   "memory": {
     "format": "  {}%",
     "format-alt": "  {used}/{total} GiB",
-    "interval": 1,
+    "interval": 1
   },
   "cpu": {
     "format": "  {usage}%",
     "format-alt": "  {avg_frequency} GHz",
-    "interval": 1,
+    "interval": 1
   },
   "disk": {
     "format": "󰋊 {percentage_used}%",
     "format-alt": "󰋊 {used}/{total}",
     "interval": 5,
-    "path": "/",
+    "path": "/"
   },
   // "tray": {
   // "icon-size": 20,
@@ -112,22 +111,18 @@
     "format": "{icon} {volume}%",
     "format-muted": "  0%",
     "format-icons": {
-      "default": [
-        "󰕿",
-        "󰖀",
-        "󰕾"
-      ],
+      "default": ["󰕿", "󰖀", "󰕾"]
     },
     "on-click": "pulsemixer --toggle-mute",
     "on-scroll-up": "amixer set Master 5%+",
-    "on-scroll-down": "amixer set Master 5%-",
+    "on-scroll-down": "amixer set Master 5%-"
   },
   "custom/Arch-Logo": {
     "format": " 󰣇 ",
-    "on-click": "rofi -show drun",
+    "on-click": "rofi -show drun"
   },
   "custom/sd": {
     "format": "  ",
-    "on-click": "wlogout",
-  },
+    "on-click": "wlogout"
+  }
 }

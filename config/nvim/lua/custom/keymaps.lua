@@ -15,12 +15,7 @@ vim.keymap.set("n", "[q", "<cmd>cprev<cr>", { desc = "Go to prev qf item" })
 vim.keymap.set("n", "<C-d>", "5j", { desc = "Scroll down by 5 lines" })
 vim.keymap.set("n", "<C-u>", "5k", { desc = "Scroll up by 5 lines" })
 vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
-vim.keymap.set(
-	{ "n", "i" },
-	"<C-space>",
-	"copilot#Accept()",
-	{ silent = true, expr = true, desc = "Accept copilot suggestion" }
-)
+-- vim.keymap.set("i", "<C-c>", "copilot#Accept()", { silent = true, expr = true, desc = "Accept copilot suggestion" })
 vim.keymap.set("n", "L", "<cmd>bnext<cr>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "H", "<cmd>bprev<cr>", { desc = "Go to prev buffer" })
 vim.keymap.set("n", "+", "<C-w>|<C-w>_")

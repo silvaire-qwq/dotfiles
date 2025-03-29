@@ -22,7 +22,9 @@ return {
 				numbers = {},
 				booleans = { "bold" },
 				properties = {},
-				types = {},
+				types = {
+					"bold",
+				},
 				operators = {},
 				-- miscs = {}, -- Uncomment to turn off hard-coded styles
 			},
@@ -30,6 +32,7 @@ return {
 			term_colors = true,
 			integrations = {
 				aerial = true,
+				blink_cmp = true,
 				cmp = true,
 				diffview = true,
 				mini = {
@@ -41,14 +44,13 @@ return {
 				-- overseer = true,
 				telescope = {
 					enabled = true,
-					-- style = 'nvchad',
+					-- style = "nvchad",
 				},
 				indent_blankline = {
 					enabled = true,
 					scope_color = "lavender", -- catppuccin color (eg. `lavender`) Default: text
 					colored_indent_levels = false,
 				},
-				nvimtree = true,
 				neotree = false,
 				which_key = true,
 				treesitter = true,

@@ -1,3 +1,4 @@
+-- [[ Import Other Lua Files ]]
 require("custom.options")
 require("custom.neovide")
 require("custom.keymaps")
