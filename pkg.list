@@ -1830,6 +1830,7 @@ speexdsp
 spice-gtk
 spice-protocol
 spirv-tools
+splayer-appimage
 sqlite
 squashfs-tools
 squashfuse
@@ -2096,6 +2097,7 @@ zix
 zlib
 zlib-ng
 zoxide
+zram-generator
 zsh
 zstd
 zxing-cpp

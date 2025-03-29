@@ -1,39 +1,37 @@
+---@diagnostic disable: missing-fields
 return {
 	"folke/noice.nvim",
-	dependencies = {
-		"MunifTanjim/nui.nvim",
-	},
 	keys = { ":", "/", "?" }, -- lazy load cmp on more keys along with insert mode
 	config = function()
 		require("noice").setup({
+			presets = {
+				command_palette = false,
+				lsp_doc_border = {
+					views = {
+						hover = {
+							border = {
+								style = "single",
+							},
+						},
+					},
+				},
+			},
+			messages = {
+				enabled = false,
+			},
+			popupmenu = {
+				enabled = false,
+			},
 			lsp = {
-				progress = {
+				signature = {
 					enabled = false,
 				},
-				signature = {
+				progress = {
 					enabled = false,
 				},
 				hover = {
 					enabled = false,
 				},
-			},
-			presets = {
-				bottom_search = true,
-				command_palette = false,
-				long_message_to_split = true,
-				inc_rename = false,
-				lsp_doc_border = true,
-			},
-			messages = {
-				enabled = true,
-				view = "notify",
-				view_error = "notify",
-				view_warn = "notify",
-				view_history = "messages",
-				view_search = "virtualtext",
-			},
-			health = {
-				checker = false,
 			},
 		})
 	end,
