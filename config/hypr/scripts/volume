@@ -4,11 +4,9 @@
 
 ## Script To Manage Speaker Volume For Archcraft (in Wayland).
 
-
 # Get Volume
 get_volume() {
 	volume=$(amixer get Master | tail -n1 | awk -F ' ' '{print $5}' | tr -d '[]')
 	echo "$volume"
 }
 
-notify-send "Amixer | 当前音量" $(get_volume)

@@ -49,8 +49,8 @@ bar_spacing = 1
 ; method = pulse
 ; source = auto
 
-method = alsa
-source = pipewire
+method = pulse
+source = auto
 
 ; method = fifo
 ; source = /tmp/mpd.fifo

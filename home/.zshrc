@@ -108,9 +108,9 @@ eval "$(starship init zsh)"
 # . ~/.oh-my-zsh/custom/themes/jovial.zsh-theme
 
 # Bun Init 
-# [ -s "/home/arch/.bun/_bun" ] && source "/home/arch/.bun/_bun"
-# export BUN_INSTALL="$HOME/.bun"
-# export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/home/arch/.bun/_bun" ] && source "/home/arch/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # hide EOL sign ('%')
 export PROMPT_EOL_MARK=""

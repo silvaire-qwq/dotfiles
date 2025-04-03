@@ -2,4 +2,7 @@
 clear
 
 # Start Hyprland
-Hyprland &>/dev/null
+if [ ! -f /tmp/hyprland.lck ]; then
+	sudo touch /tmp/hyprland.lck
+	Hyprland &>/dev/null
+fi
